@@ -9,6 +9,7 @@ This is an official implementation of the paper "Instance Embedding as Queries f
 
 ```
 sudo chmod +x env.sh
+bash env.sh
 ```
 
 ## Usage
