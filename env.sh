@@ -28,7 +28,7 @@ conda activate "$env_name" || { echo "Error in activating conda environment"; ex
 pip install openmim || echo "Error in pip install openmim"
 
 # Install required packages
-pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html || { echo "Error in pip install torch"; exit 1; }
+pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 -f https://download.pytorch.org/whl/cu111/torch_stable.html || { echo "Error in pip install torch"; exit 1; }
 # pip install openmim || { echo "Error in pip install openmim"; exit 1; }
 mim install mmengine==0.7.4 || { echo "Error in mim install mmengine"; exit 1; }
 mim install mmcv==2.0.0rc4 || { echo "Error in mim install mmcv"; exit 1; }
