@@ -2,8 +2,21 @@
 
 ## Introduction
 
-This is an official implementation of the paper "Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation".
+This is an official implementation of our TIV's paper ["Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation"](https://doi.org/10.1109/TIV.2024.3488035).
 
+If you find the code useful for your research, please consider citing our paper:
+```
+@ARTICLE{10738293,
+  author={Ha-Phan, Ngoc-Quan and Vuong, Hung Viet and Yoo, Myungsik},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/TIV.2024.3488035}}
+
+```
 
 ## Installation
 
