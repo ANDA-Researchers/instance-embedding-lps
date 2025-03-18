@@ -4,5 +4,5 @@ __pycache__
 work_dirs/
 view?usp=drive_link
 *.whl*
-*.png
+# *.png
 semantickitti_submission/
