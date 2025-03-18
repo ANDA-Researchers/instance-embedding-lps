@@ -11,8 +11,6 @@ If you find the code useful for your research, please consider citing our paper:
   journal={IEEE Transactions on Intelligent Vehicles}, 
   title={Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}, 
   year={2024},
-  volume={},
-  number={},
   pages={1-13},
   doi={10.1109/TIV.2024.3488035}}
 
