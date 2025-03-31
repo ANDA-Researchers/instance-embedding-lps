@@ -10,45 +10,50 @@
   <title>Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.png">
+  <link rel="icon" href="static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .container.is-max-desktop {
+      max-width: 1200px; /* Increase the max width */
+    }
+  </style>
 </head>
 
 <body>
-
-  <section class="hero">
+  <section class="hero" style="margin-top: 1rem;">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation</h1>
-
+            <h1 class="title is-2 publication-title">
+              Instance Embedding as Queries for DETR-based <br> LiDAR Panoptic Segmentation
+            </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://hphnngcquan.github.io/">Ngoc-Quan Ha-Phan</a></span>,
+                <a href="https://hphnngcquan.github.io/" title="Co-first Author">Ngoc-Quan Ha-Phan</a>
+              </span>,
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=-ajygUwAAAAJ&hl=vi&oi=sra">Hung Viet Vuong</a></span>,
+                <a href="https://scholar.google.com/citations?user=-ajygUwAAAAJ&hl=vi&oi=sra" title="Co-first Author">Hung Viet Vuong</a>
+              </span>,
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=TARMZOsAAAAJ&hl=vi&oi=sra">Myungsik Yoo</a></span>
+                <a href="https://scholar.google.com/citations?user=TARMZOsAAAAJ&hl=vi&oi=sra" title="Corresponding Author">Myungsik Yoo</a>
               </span>
             </div>
-
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://anda-researchers.github.io/site/">ANDA Lab</a>, Soongsil University</span>
+              <span class="author-block">
+                <a href="https://anda-researchers.github.io/site/">ANDA Lab</a>, Soongsil University
+              </span>
             </div>
-
             <div class="column has-text-centered">
               <div class="publication-links">
-
-                <!-- PDF Link. -->
                 <span class="link-block">
                   <a href="https://ieeexplore.ieee.org/document/10738293" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -57,80 +62,64 @@
                     <span>Paper</span>
                   </a>
                 </span>
-
-                <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/ANDA-Researchers/instance-embedding-lps"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ANDA-Researchers/instance-embedding-lps" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
-
               </div>
-
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
-
   </section>
 
-  <section class="section">
+  <section class="section" style="margin-top: 1rem;">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            <p>
               LiDAR panoptic segmentation (LPS) offers a comprehensive perception of the driving environment for autonomous vehicles, providing valuable and relevant information for downstream tasks such as scene understanding or 4D panoptic tracking. Current state-of-the-art (SOTA) methods are predominantly based on the detection-transformer (DETR) paradigm. These approaches formulate panoptic segmentation as a problem of predicting the association scores of points within each group, which can be either a <em>thing</em> class instance or a <em>stuff</em> class. To this end, groups are represented by a fixed number of randomly initialized vectors called queries, whose values remain constant during inference. In this approach, queries are required to represent a wide range of objects that present in any particular scene. Recent studies on DETR application in the image domain have attempted to resolve this issue by introducing a strategy for adaptive query generation on a per-scene basis, which has achieved promising results, while in the LiDAR domain, existing DETR-based approaches have yet to explore adaptive mechanisms for queries generation. Motivated by that insight, our work proposes a technique for query representation called clustered feature aggregation (CFA) - a method for computing the features associated with an instance and using them as a query for the segmentation of that instance. To cluster points belonging to the same group, this study introduces shifted point clustering (SPC), an enhancement of traditional clustering techniques, as it secures high-confidence instance accumulation. Our proposed methods, in combination with a strong DETR-based baseline, establish new SOTA results for the panoptic segmentation challenge, outperforming previous top-performers by 1.20% and 1.94%, in PQ metric, on SemanticKITTI and Panoptic Nuscenes datasets, respectively.
-          </p>
             </p>
           </div>
         </div>
       </div>
-      <section class="hero teaser">
+      <section class="hero teaser" style="margin-top: 5rem;">
         <div class="container is-max-desktop">
           <div class="hero-body">
-            <video controls poster="./static/images/poster.jpg"; autoplay muted loop style="width: 100%; max-width: 100%; height: auto;">
+            <video controls poster="./static/images/poster.jpg" autoplay muted loop style="width: 100%; max-width: 100%; height: auto;">
               <source src="./Presentation_TIV.mp4" type="video/mp4">
               Your browser does not support this video tag.
             </video>
-            <br><br>
-            <h2 class="subtitle has-text-centered">
-            </h2>
           </div>
         </div>
       </section>
     </div>
   </section>
 
-
-  <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX" style="margin-top: 1rem;">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@ARTICLE{10738293,
-        author={Ha-Phan, Ngoc-Quan and Vuong, Hung Viet and Yoo, Myungsik},
-        journal={IEEE Transactions on Intelligent Vehicles}, 
-        title={Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}, 
-        year={2024},
-        pages={1-13},
-        doi={10.1109/TIV.2024.3488035}}
-        </code></pre>
+  author={Ha-Phan, Ngoc-Quan and Vuong, Hung Viet and Yoo, Myungsik},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}, 
+  year={2024},
+  pages={1-13},
+  doi={10.1109/TIV.2024.3488035}}
+      </code></pre>
     </div>
   </section>
 
-
-  <footer class="footer">
+  <footer class="footer" style="padding: 1rem 0; font-size: 0.9rem;">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="https://github.com/YilmazKadir" class="external-link" disabled>
+        <a class="icon-link" href="https://github.com/hphnngcquan" class="external-link" disabled>
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -138,21 +127,16 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
             <p>
-              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-              We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this
-              template.
+              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
