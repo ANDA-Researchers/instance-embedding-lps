@@ -63,7 +63,10 @@ sh dist_test.sh $CONFIG $CHECKPOINT $GPUS
 sh dist_test.sh $CONFIG $CHECKPOINT $GPUS
 
 ```
-
+Pretrained weight can be downloaded as follows
+```bash
+wget https://github.com/ANDA-Researchers/instance-embedding-lps/releases/download/v0.0.1/panoptic_main.pth
+```
 
 ## Acknowledgements
 
